@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navItemHome"
+        android:icon="@drawable/select_home_bg"
+        android:title="@string/bottom_home_page" />
+    <item
+        android:id="@+id/navItemMessage"
+        android:icon="@drawable/select_message_bg"
+        android:title="@string/bottom_message" />
+</menu>

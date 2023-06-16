@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageViewBTImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/bluetooth_icon"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/textViewBTName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#ff00cc"
+            android:text="@string/test"
+            android:layout_marginStart="10dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/textViewBTAddress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#ff00cc"-->
+<!--            android:layout_marginStart="10dp"/>-->
+
+<!--        为了把button放在最右边 只能单独放在LinearLayout中设置gravity为right-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="right"
+          tools:ignore="RtlHardcoded">
+          <Button
+              android:id="@+id/buttonBTConnect"
+              android:layout_width="50dp"
+              android:layout_height="32dp"
+              android:layout_marginEnd="5dp"
+              android:background="@drawable/button_bt"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              android:layout_gravity="end"
+              android:alpha="0.9"
+              android:textAllCaps="false"
+              android:text="@string/bt_connect"/>
+      </LinearLayout>
+    </LinearLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/textViewBTUUID"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textColor="#ff00cc"-->
+<!--        android:layout_marginStart="10dp"/>-->
+
+
+</LinearLayout>

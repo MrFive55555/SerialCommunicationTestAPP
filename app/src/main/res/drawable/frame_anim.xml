@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bili_red_icon" android:duration="500"/>
+    <item android:drawable="@drawable/bili_orange_icon" android:duration="500"/>
+    <item android:drawable="@drawable/bili_yellow_icon" android:duration="500"/>
+    <item android:drawable="@drawable/bili_green_icon" android:duration="500"/>
+    <item android:drawable="@drawable/bili_cyan_icon" android:duration="500" />
+    <item android:drawable="@drawable/bili_blue_icon" android:duration="500"/>
+    <item android:drawable="@drawable/bili_violet_icon" android:duration="500"/>
+</animation-list>

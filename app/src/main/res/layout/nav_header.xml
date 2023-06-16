@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="180dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headIconImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/number5_icon"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/headDescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="the person have no 描述"/>
+    <TextView
+        android:id="@+id/headName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headDescribe"
+        android:text="Mr.Five"/>
+
+</RelativeLayout>

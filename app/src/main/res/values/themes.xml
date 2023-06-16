@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Alarm" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <style name="BTEditTextStyle">
+        <!--文本的颜色，textColor和textSize不要放到style中-->
+        <item name="android:textColorHint">#7E9CBA</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="MQTTEditTextStyle">
+        <item name="android:textColorHint">#B57F2F</item>
+        <item name="colorControlNormal">@color/orange</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+</resources>

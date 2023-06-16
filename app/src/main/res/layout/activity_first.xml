@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/title_name"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp">
+        <ImageButton
+            android:id="@+id/imageButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:src="@drawable/number5_icon"/>
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/author"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/button_bt"
+        android:drawableStart="@drawable/button_pic_bt"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bluetooth"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:alpha="0.9"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/buttonInternet"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/button_internet"
+        android:drawableStart="@drawable/button_pic_internet"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/internet"
+        android:textStyle="bold"
+        android:alpha="0.9"
+        android:textAllCaps="false"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/buttonAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#00000000"
+        android:drawableStart="@drawable/about_icon"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/about_me"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/messageTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:layout_marginStart="5dp"
+            android:text="@string/chat_page_mqtt"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/buttonClearAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_internet"
+            android:text="@string/clear_all"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessageMqtt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:text="@string/sub_topic"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editSubTopic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_color_mqtt"
+            android:theme="@style/MQTTEditTextStyle"
+            android:layout_weight="5" />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_internet"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/sub"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textViewPubTopic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/topic"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/editPubTopic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_color_mqtt"
+            android:theme="@style/MQTTEditTextStyle"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/textViewMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:text="@string/message"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_color_mqtt"
+            android:theme="@style/MQTTEditTextStyle"
+            android:layout_weight="5"/>
+
+        <Button
+            android:id="@+id/buttonPub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_internet"
+            android:layout_marginEnd="5dp"
+            android:text="@string/publish"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
